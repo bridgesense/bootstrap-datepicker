@@ -447,7 +447,7 @@
 				local_date = this._utc_to_local(date);
 
 			this.element.trigger({
-				type: event,
+				type: 'datepicker' + event,
 				date: local_date,
 				viewMode: this.viewMode,
 				dates: $.map(this.dates, this._utc_to_local),
